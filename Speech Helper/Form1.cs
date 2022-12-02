@@ -23,8 +23,8 @@ namespace Speech_Helper
         List<VoiceInfo> listvoces = new List<VoiceInfo>();
         private void Form1_Load(object sender, EventArgs e)
         {
-            SkinManager.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
-            SkinManager.ColorScheme = new ColorScheme(Primary.LightBlue900, Primary.Grey700, Primary.Red400, Accent.Green700, TextShade.WHITE);
+            SkinManager.Theme = MaterialSkin.MaterialSkinManager.Themes.DARK;
+            SkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.Grey700, Primary.Red400, Accent.Green700, TextShade.WHITE);
 
             voz = new SpeechSynthesizer();
             foreach (InstalledVoice x in voz.GetInstalledVoices())

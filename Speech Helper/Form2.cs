@@ -22,16 +22,22 @@ namespace Speech_Helper
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            SkinManager.Theme = MaterialSkin.MaterialSkinManager.Themes.LIGHT;
-            SkinManager.ColorScheme = new ColorScheme(Primary.LightBlue900, Primary.Grey700, Primary.Red400, Accent.Green700, TextShade.WHITE);
+            SkinManager.Theme = MaterialSkin.MaterialSkinManager.Themes.DARK;
+            SkinManager.ColorScheme = new ColorScheme(Primary.LightBlue700, Primary.Grey700, Primary.Red400, Accent.Green700, TextShade.WHITE);
         }
 
         private void btniniciar_Click(object sender, EventArgs e)
         {
+            try { 
             escucha.SetInputToDefaultAudioDevice();
             escucha.LoadGrammar(new DictationGrammar());
             escucha.SpeechRecognized += Detection;
             escucha.RecognizeAsync(RecognizeMode.Multiple);
+            }
+            catch
+            {
+                MessageBox.Show("No se Detecto Ningun Microfono", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void Detection(object sender, SpeechRecognizedEventArgs e)

@@ -49,6 +49,8 @@
             // 
             // txtleer
             // 
+            this.txtleer.BackColor = System.Drawing.Color.LightGray;
+            this.txtleer.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtleer.Location = new System.Drawing.Point(55, 77);
             this.txtleer.Multiline = true;
             this.txtleer.Name = "txtleer";
@@ -158,6 +160,7 @@
             // materialLabel1
             // 
             this.materialLabel1.AutoSize = true;
+            this.materialLabel1.BackColor = System.Drawing.Color.Gray;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -170,6 +173,7 @@
             // 
             // tbviolumen
             // 
+            this.tbviolumen.BackColor = System.Drawing.Color.Gray;
             this.tbviolumen.Location = new System.Drawing.Point(128, 514);
             this.tbviolumen.Maximum = 100;
             this.tbviolumen.Name = "tbviolumen";
@@ -180,6 +184,7 @@
             // 
             // tbvelocidad
             // 
+            this.tbvelocidad.BackColor = System.Drawing.Color.Gray;
             this.tbvelocidad.Location = new System.Drawing.Point(128, 586);
             this.tbvelocidad.Minimum = -10;
             this.tbvelocidad.Name = "tbvelocidad";
@@ -190,6 +195,7 @@
             // materialLabel2
             // 
             this.materialLabel2.AutoSize = true;
+            this.materialLabel2.BackColor = System.Drawing.Color.Gray;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -203,6 +209,7 @@
             // materialLabel3
             // 
             this.materialLabel3.AutoSize = true;
+            this.materialLabel3.BackColor = System.Drawing.Color.Gray;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -217,6 +224,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(817, 662);
             this.Controls.Add(this.materialLabel3);
             this.Controls.Add(this.materialLabel2);
@@ -232,6 +240,7 @@
             this.Controls.Add(this.btndetener);
             this.Controls.Add(this.btnleer);
             this.Controls.Add(this.txtleer);
+            this.ForeColor = System.Drawing.Color.White;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -255,10 +264,10 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnirareconocimiento;
         private System.Windows.Forms.ComboBox cbseleccionvoz;
         private MaterialSkin.Controls.MaterialLabel materialLabel1;
-        private System.Windows.Forms.TrackBar tbviolumen;
         private System.Windows.Forms.TrackBar tbvelocidad;
         private MaterialSkin.Controls.MaterialLabel materialLabel2;
         private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private System.Windows.Forms.TrackBar tbviolumen;
     }
 }
 
